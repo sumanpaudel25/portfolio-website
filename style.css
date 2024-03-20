@@ -1,0 +1,97 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling the body */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  /* Menu styles */
+  .menu {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu-item {
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: #555;
+  }
+  
+  /* Content styles */
+  .content {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Responsive typography */
+  h1, h2, h3, p {
+    margin-bottom: 15px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+  
+  /* Form styles */
+  form {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background: #555;
+  }
+  
