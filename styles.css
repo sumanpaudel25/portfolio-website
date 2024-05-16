@@ -45,7 +45,7 @@ nav ul li a {
 
 #hero {
   background: url('hero-image.jpg') no-repeat center center/cover;
-  color: #ff;
+  color: #000;
   text-align: center;
   padding: 2rem 0;
 }
