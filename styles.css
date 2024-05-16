@@ -45,7 +45,7 @@ nav ul li a {
 
 #hero {
   background: url('hero-image.jpg') no-repeat center center/cover;
-  color: #fff;
+  color: #ff;
   text-align: center;
   padding: 2rem 0;
 }
@@ -108,12 +108,12 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
+/* 
 /* Hover effect for project cards */
 #projects .project:hover {
   transform: scale(1.05);
   background-color: #eaeaea;
-}
+} */
 
 /* Existing styles */
 body {
