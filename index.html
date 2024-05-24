@@ -3,84 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suman Paudel - Civil Engineer Portfolio</title>
+    <title>Suman Paudel - Civil Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Suman Paudel</h1>
-                <p>Civil Engineer</p>
+    <div class="container">
+        <header class="profile">
+            <img src="profile.jpg" alt="Suman Paudel">
+            <h1>Suman Paudel</h1>
+            <p>Civil Engineer</p>
+            <div class="social-links">
+                <a href="https://facebook.com/sumanpaudel" target="_blank">Facebook</a>
+                <a href="https://twitter.com/sumanpaudel" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/in/sumanpaudel" target="_blank">LinkedIn</a>
             </div>
+        </header>
+        <nav class="navigation">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" onclick="navigateTo('about')">About</a></li>
+                <li><a href="#" onclick="navigateTo('blogs')">Blogs</a></li>
+                <li><a href="#" onclick="navigateTo('uses')">Uses</a></li>
+                <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
             </ul>
         </nav>
-    </header>
+        <main id="main-content">
+            <section id="about" class="content-section visible">
+                <h2>About</h2>
+                <p>Founding Civil Engineer at BuildingNepal. Passionate about crafting sustainable and innovative infrastructure solutions that empower communities in Nepal.</p>
+            </section>
+            <section id="blogs" class="content-section">
+                <h2>Latest Blogs</h2>
+                <ul class="blog-list">
+                    <li><a href="#" onclick="viewBlog('blog1')">The Importance of Sustainable Building Practices</a></li>
+                    <li><a href="#" onclick="viewBlog('blog2')">Challenges in Rural Infrastructure Development</a></li>
+                </ul>
+            </section>
+            <section id="uses" class="content-section">
+                <h2>Uses</h2>
+                <p>Tools and resources I frequently use in my projects.</p>
+                <ul>
+                    <li>AutoCAD</li>
+                    <li>Revit</li>
+                    <li>ETABS</li>
+                    <li>MS Project</li>
+                </ul>
+            </section>
+            <section id="contact" class="content-section">
+                <h2>Contact</h2>
+                <p>If you have any questions or would like to get in touch, please feel free to reach out via the following:</p>
+                <ul>
+                    <li>Email: suman.paudel@example.com</li>
+                    <li>Phone: +977 123-456-7890</li>
+                </ul>
+                <div id="map"></div>
+            </section>
+            <section id="blog1" class="content-section blog-post">
+                <button class="back-button" onclick="navigateTo('blogs')">&lt; BACK</button>
+                <h2>The Importance of Sustainable Building Practices</h2>
+                <p>March 31, 2024 (2 months ago)</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor leo in erat scelerisque, nec ultricies nunc aliquam. Nullam non malesuada libero. Vestibulum ullamcorper felis nec velit luctus, eget convallis erat lacinia...</p>
+            </section>
+            <section id="blog2" class="content-section blog-post">
+            <button class="back-button" onclick="navigateTo('blogs')">&lt; BACK</button>
+                <h2>Challenges in Rural Infrastructure Development</h2>
+                <p>April 15, 2024 (1 month ago)</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor leo in erat scelerisque, nec ultricies nunc aliquam. Nullam non malesuada libero. Vestibulum ullamcorper felis nec velit luctus, eget convallis erat lacinia...</p>
+            </section>
+        </main>
+        <footer>
+            &copy; 2024 Suman Paudel
+        </footer>
+    </div>
 
-    <section id="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Building a better world, one project at a time.</p>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am Suman Paudel, a dedicated and passionate civil engineer with over 10 years of experience in designing, 
-            developing, and overseeing construction projects. My expertise spans across structural design, project management, 
-            and sustainable building practices.
-        </p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Bridge Construction</h3>
-            <p>Designed and managed the construction of a 200-meter-long bridge connecting two major cities.</p>
-        </div>
-        <div class="project">
-            <h3>Residential Complex</h3>
-            <p>Led a team of engineers to develop a sustainable residential complex with eco-friendly materials.</p>
-        </div>
-        <div class="project">
-            <h3>Highway Expansion</h3>
-            <p>Supervised the expansion of a 50-kilometer highway to improve transportation efficiency.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Structural Analysis</li>
-            <li>Project Management</li>
-            <li>AutoCAD</li>
-            <li>Revit</li>
-            <li>Concrete and Steel Design</li>
-            <li>Geotechnical Engineering</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contactForm" action="/submit-form" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Suman Paudel. All Rights Reserved.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </body>
 </html>
