@@ -29,10 +29,12 @@
         <main id="main-content">
             <section id="about" class="content-section visible">
                 <h2>About</h2>
+                <img src="about.jpg" alt="About Image" class="about-image">
                 <p>Founding Civil Engineer at BuildingNepal. Passionate about crafting sustainable and innovative infrastructure solutions that empower communities in Nepal.</p>
             </section>
             <section id="blogs" class="content-section">
                 <h2>Latest Blogs</h2>
+                <img src="blogs.jpg" alt="Blogs Image" class="blogs-image">
                 <ul class="blog-list">
                     <li><a href="#" onclick="viewBlog('blog1')">The Importance of Sustainable Building Practices</a></li>
                     <li><a href="#" onclick="viewBlog('blog2')">Challenges in Rural Infrastructure Development</a></li>
@@ -40,6 +42,7 @@
             </section>
             <section id="uses" class="content-section">
                 <h2>Uses</h2>
+                <img src="uses.jpg" alt="Uses Image" class="uses-image">
                 <p>Tools and resources I frequently use in my projects.</p>
                 <ul>
                     <li>AutoCAD</li>
@@ -50,6 +53,7 @@
             </section>
             <section id="contact" class="content-section">
                 <h2>Contact</h2>
+                <img src="contact.jpg" alt="Contact Image" class="contact-image">
                 <p>If you have any questions or would like to get in touch, please feel free to reach out via the following:</p>
                 <ul>
                     <li>Email: suman.paudel@example.com</li>
@@ -64,18 +68,19 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor leo in erat scelerisque, nec ultricies nunc aliquam. Nullam non malesuada libero. Vestibulum ullamcorper felis nec velit luctus, eget convallis erat lacinia...</p>
             </section>
             <section id="blog2" class="content-section blog-post">
-            <button class="back-button" onclick="navigateTo('blogs')">&lt; BACK</button>
+                <button class="back-button" onclick="navigateTo('blogs')">&lt; BACK</button>
                 <h2>Challenges in Rural Infrastructure Development</h2>
                 <p>April 15, 2024 (1 month ago)</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor leo in erat scelerisque, nec ultricies nunc aliquam. Nullam non malesuada libero. Vestibulum ullamcorper felis nec velit luctus, eget convallis erat lacinia...</p>
             </section>
         </main>
-        <footer>
-            &copy; 2024 Suman Paudel
-        </footer>
     </div>
-
+    <footer>
+        &copy; 2024 Suman Paudel. All rights reserved.
+    </footer>
     <script src="script.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
 </body>
 </html>

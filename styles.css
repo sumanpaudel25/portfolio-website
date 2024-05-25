@@ -4,23 +4,30 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 800px;
-    margin: auto;
+    width: 100%;
     padding: 20px;
+    flex: 1;
 }
 
 .profile {
     text-align: center;
     padding: 20px 0;
+    background: url('header-background.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
 }
 
 .profile img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 3px solid white;
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -31,13 +38,16 @@ body {
 
 .profile p {
     font-size: 1.2em;
-    color: #555;
 }
 
 .social-links a {
     margin: 0 10px;
     text-decoration: none;
-    color: #0077b5; /* LinkedIn Blue */
+    color: white;
+}
+
+.navigation {
+    background-color: #0077b5;
 }
 
 .navigation ul {
@@ -53,7 +63,7 @@ body {
 
 .navigation a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: bold;
     cursor: pointer;
     padding: 10px 15px;
@@ -61,7 +71,7 @@ body {
 }
 
 .navigation a.active {
-    background-color: #0077b5;
+    background-color: #005fa3;
     color: #fff;
     border-radius: 5px;
 }
@@ -130,8 +140,6 @@ footer {
     padding: 20px 0;
     color: #fff;
     background-color: #0077b5;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
@@ -139,6 +147,30 @@ footer {
     height: 300px;
     width: 100%;
     margin-top: 20px;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.blogs-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.uses-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.contact-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
 }
 
 @keyframes fadeIn {
