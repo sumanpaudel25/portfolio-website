@@ -81,7 +81,7 @@ footer {
     text-align: center;
     padding: 20px;
     background: rgba(224, 247, 250, 0.8);
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
 }

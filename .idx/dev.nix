@@ -25,6 +25,21 @@
     previews = {
       enable = true;
       previews = {
+        web = {
+      command = [
+        "npm"
+        "run"
+        "start"
+        "--"
+        "--port"
+        "$PORT"
+        "--host"
+        "0.0.0.0"
+        "--disable-host-check"
+      ];
+      manager = "web";
+    };
+
         # web = {
         #   # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
         #   # and show it in IDX's web preview panel
