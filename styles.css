@@ -1,87 +1,99 @@
 body {
-    font-family: 'Raleway', sans-serif;
-    background: #f0f8ff;
-    margin: 0;
-    padding: 0;
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  font-family: "Raleway", sans-serif;
+  background: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 header {
-    text-align: center;
-    padding: 100px 20px;
-    background: rgba(224, 247, 250, 0.8);
-    margin-bottom: 30px;
+  text-align: center;
+  padding: 100px 20px;
+  background: rgba(224, 247, 250, 0.8);
+  margin-bottom: 30px;
 }
 
 header h1 {
-    font-size: 3em;
-    margin: 0;
-    color: #00796b;
-    font-weight: 700;
+  font-size: 3em;
+  margin: 0;
+  color: #00796b;
+  font-weight: 700;
 }
 
 header h2 {
-    font-size: 2.5em;
-    margin: 10px 0;
-    color: #004d40;
-    font-weight: 400;
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #004d40;
+  font-weight: 400;
 }
 
 header .highlight {
-    color: #d32f2f;
-    font-weight: 700;
+  color: #d32f2f;
+  font-weight: 700;
 }
 
 header p {
-    font-size: 1.5em;
-    color: #555;
+  font-size: 1.5em;
+  color: #555;
 }
 
 .social-icons {
-    margin-top: 20px;
+  margin-top: 20px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 16px;
 }
 
-.social-icons a {
-    margin: 0 10px;
-    display: inline-block;
+/* .social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+} */
+
+.social-icon {
+  color: #004d40;
+  font-size: 36px;
+
+  transition: color 300ms;
 }
 
-.social-icons img {
-    width: 40px;
-    height: 40px;
+.social-icon:hover {
+  color: #00796b;
 }
 
 main {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 .skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .skills span {
-    background: rgba(0, 121, 107, 0.2);
-    margin: 5px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 1.2em;
-    color: #004d40;
-    font-weight: 500;
+  background: rgba(0, 121, 107, 0.2);
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1.2em;
+  color: #004d40;
+  font-weight: 500;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(224, 247, 250, 0.8);
-    /* position: fixed; */
-    width: 100%;
-    bottom: 0;
+  text-align: center;
+  padding: 20px;
+  background: rgba(224, 247, 250, 0.8);
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
 }
